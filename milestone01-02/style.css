@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  border-style: double;
+  font-style: oblique;
+}
+
+h1 {
+  color: rgba(9, 9, 9, 0.804);
+  font-size: 80px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: flex;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 900px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#p-info,
+#edu,
+#Skills,
+#exp {
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  border-style: double;
+  padding: 8px 8px 8px 8px;
+  text-align: center;
+  margin-left: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#p-info:hover {
+  background-color: black;
+}
+
+#p-info:hover {
+  outline: none;
+}
+
+#p-info:active {
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+  height: 40px;
+  margin-top: 210px;
+  color: white;
+  font-size: 30px;
+  text-align: end;
+}
