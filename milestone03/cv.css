@@ -119,3 +119,28 @@ button:active {
   color: black;
   font-weight: bold;
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: xx-large; /* Adjust font size for smaller screens */
+  }
+
+  button {
+    font-size: 18px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: x-large; /* Further adjust for very small screens */
+  }
+
+  form {
+    padding: 15px; /* Less padding on small screens */
+  }
+
+  input,
+  textarea {
+    width: 100%; /* Full width inputs on small screens */
+  }
+}

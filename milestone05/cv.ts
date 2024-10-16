@@ -85,9 +85,9 @@ form.addEventListener("submit", (event: Event) => {
   resumeDisplayElement.innerHTML = resumeHTML;
 
   // Generate a shareable URL with the username only
-  const shareableURL = `${
-    window.location.origin
-  }?username= ${encodeURIComponent(username)}`;
+  const shareableURL = `${window.location.href}?username= ${encodeURIComponent(
+    username
+  )}`;
 
   // Display the shareable link
   shareableLinkContainer.style.display = "block";

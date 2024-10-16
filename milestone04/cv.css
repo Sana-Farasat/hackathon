@@ -102,7 +102,6 @@ button:active {
   border-radius: 6px;
   background-color: rgb(228, 242, 255);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  outline: none;
 }
 
 #resume-display h1 {
@@ -124,4 +123,30 @@ button:active {
 [contenteditable="true"]:focus {
   outline: none; /* Removes the default outline */
   box-shadow: none; /* Removes any box shadow */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: xx-large; /* Adjust font size for smaller screens */
+  }
+
+  button {
+    font-size: 18px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: x-large; /* Further adjust for very small screens */
+  }
+
+  form {
+    padding: 15px; /* Less padding on small screens */
+  }
+
+  input,
+  textarea {
+    width: 100%; /* Full width inputs on small screens */
+  }
 }
