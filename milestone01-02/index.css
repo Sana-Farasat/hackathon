@@ -104,6 +104,9 @@ p {
   p {
     font-size: 3vw; /* Smaller font size */
   }
+  #one {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -124,5 +127,8 @@ p {
   #three,
   #four {
     padding: 10px; /* Less padding on very small screens */
+  }
+  #one {
+    height: 100vh;
   }
 }

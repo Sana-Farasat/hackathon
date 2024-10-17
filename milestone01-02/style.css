@@ -90,27 +90,95 @@ footer {
 /* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
   h1 {
-    font-size: 6vw;
+    /* font-size: 6vw; */
+    font-size: 2em;
   }
   h2 {
     font-size: 4vw;
   }
-  ul, p {
+  ul,
+  p {
     font-size: 3.5vw;
+  }
+  button {
+    font-size: 4vw;
+  }
+  footer {
+    padding-right: 5%;
+    width: 100vw;
+    font-size: 1em;
+    height: fit-content;
+  }
+  #cv-container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  header {
+    height: 40px;
+  }
+  #p-info {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #edu {
+    margin-left: 27%;
+    margin-right: 25%;
+  }
+  #Skills {
+    margin-left: 30%;
+    margin-right: 26%;
+  }
+  #exp {
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 8vw;
+    /* font-size: 8vw;*/
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1em;
   }
   h2 {
     font-size: 5vw;
   }
-  ul, p {
+  ul,
+  p {
     font-size: 4vw;
   }
   button {
     font-size: 4vw;
+  }
+  footer {
+    padding-right: 5%;
+    width: 100vw;
+    font-size: 1em;
+    height: fit-content;
+  }
+  #cv-container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  header {
+    height: 35px;
+    /* width: 100vw; */
+  }
+  #p-info {
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+  #edu {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #Skills {
+    margin-left: 24%;
+    margin-right: 26%;
+  }
+  #exp {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }

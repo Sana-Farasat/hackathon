@@ -149,4 +149,11 @@ button:active {
   textarea {
     width: 100%; /* Full width inputs on small screens */
   }
+  button {
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+  fieldset {
+    padding-right: 12%;
+  }
 }
