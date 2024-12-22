@@ -84,10 +84,18 @@ form.addEventListener("submit", (event: Event) => {
   // Display the generated resume
   resumeDisplayElement.innerHTML = resumeHTML;
 
+  //-----------------------------------------------
   // Generate a shareable URL with the username only
-  const shareableURL = `${window.location.href}?username= ${encodeURIComponent(
-    username
-  )}`;
+  // const shareableURL = `${window.location.origin/href}?username= ${encodeURIComponent(
+  //   username
+  // )}`;
+  //-----------------------------------------------
+
+  // Define your Vercel URL
+  const vercelURL = "https://shareable-resume-builder-three.vercel.app/";
+
+  // Generate a shareable URL with the username only
+  const shareableURL = `${vercelURL}?username=${encodeURIComponent(username)}`;
 
   // Display the shareable link
   shareableLinkContainer.style.display = "block";

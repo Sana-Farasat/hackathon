@@ -5,11 +5,13 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: whitesmoke;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: black;
+  background-color: #4a5568;
   height: 100px;
   border-radius: 10px;
   border: none;
@@ -19,13 +21,16 @@ header {
 
 h1 {
   color: rgba(9, 9, 9, 0.804);
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bolder;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#cv-container {
+  padding-left: 10px;
+}
 img {
   display: flex;
   border-radius: 50%;
@@ -54,32 +59,36 @@ p {
 #edu,
 #Skills,
 #exp {
+  width: 233.25px;
+  height: auto;
   border-radius: 10px;
   font-size: 20px;
   border: none;
   color: white;
   border-style: double;
-  padding: 8px 8px 8px 8px;
-  text-align: center;
-  margin-left: 80px;
+  padding: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-#p-info:hover {
-  background-color: black;
+/* Hover effect */
+#p-info:hover,
+#edu:hover,
+#Skills:hover,
+#exp:hover {
+  background-color: #4a5568; /* Optional: change background color on hover */
+  transform: scale(1.1); /* Increase size by 10% on hover */
 }
 
-#p-info:hover {
-  outline: none;
-}
-
-#p-info:active {
-  background-color: black;
+#toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 footer {
-  background-color: black;
+  background-color: #4a5568;
   height: 40px;
   margin-top: 210px;
   color: white;
@@ -116,21 +125,10 @@ footer {
   header {
     height: 40px;
   }
-  #p-info {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
-  #edu {
-    margin-left: 27%;
-    margin-right: 25%;
-  }
-  #Skills {
-    margin-left: 30%;
-    margin-right: 26%;
-  }
-  #exp {
-    margin-left: 25%;
-    margin-right: 25%;
+
+  #toggle-btn {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -165,20 +163,17 @@ footer {
     height: 35px;
     /* width: 100vw; */
   }
-  #p-info {
-    margin-left: 18%;
-    margin-right: 18%;
+
+  #toggle-btn {
+    display: flex;
+    flex-direction: column;
   }
-  #edu {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  #Skills {
-    margin-left: 24%;
-    margin-right: 26%;
-  }
-  #exp {
-    margin-left: 20%;
-    margin-right: 20%;
+}
+@media (min-width: 770px) and (max-width: 962px) {
+  #toggle-btn {
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
   }
 }
